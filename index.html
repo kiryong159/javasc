@@ -4,9 +4,32 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="style.css" rel="stylesheet" />
-    <title>Document</title>
+    <link href="css/style.css" rel="stylesheet" />
+    <title>Moment App</title>
   </head>
-  <body></body>
-  <script src="app.js"></script>
+  <body>
+    <form class="login-form hidden">
+      <input
+        required
+        maxlength="15"
+        type="text"
+        placeholder="what is your name"
+      />
+      <input type="submit" value="Log-in" />
+    </form>
+    <h1 class="hidden"></h1>
+    <h2 class="clock">00:00</h2>
+    <form class="todo-form">
+      <input type="text" placeholder="할일을 쓰고 엔터를눌러" required />
+    </form>
+    <ul class="todo-list"></ul>
+    <span class="quote"></span>
+    <span class="quote-author"></span>
+  </body>
+  <script src="js/greeting.js"></script>
+  <script src="js/clock.js"></script>
+  <script src="js/quotes.js"></script>
+  <script src="js/background.js"></script>
+  <script src="js/todo.js"></script>
+  <script src="js/weather.js"></script>
 </html>
